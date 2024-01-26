@@ -69,7 +69,7 @@ header {
 }
 .checkbtn {
     font-size: 25px;
-    color: #E59823;
+    color:deeppink;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -384,7 +384,6 @@ button:hover {
         color: deeppink;
     }
     .encabezado ul{
-        display: flex;
         flex-direction: column;
         list-style: none;
     }
@@ -401,7 +400,7 @@ button:hover {
         width: 50%;
     }
     .checkbtn {
-        display: block;
+        display:block;
     }
     
     #check:checked~ul {
@@ -410,7 +409,7 @@ button:hover {
     }
     
     #check:checked~.checkbtn {
-        color: #2060a0;
+        color:var(--color1);
     }
     .encabezado nav ul li {
         display: flex;
@@ -532,7 +531,7 @@ button:hover {
         margin: 10px 0;
     }
     .testimonial img {
-        margin-left: 200px;
+        margin-left: 180px;
         border-radius: 50%;
         width: 205px; /* Ajusta el tamaño según sea necesario */
         height: 205px; /* Ajusta el tamaño según sea necesario */
