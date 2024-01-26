@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta una Mascota</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Imagenes/2-removebg-preview-copia.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <img class="logo" src="/Mi-web-con-chat-GPT/Imagenes/1-removebg-preview.png">
+        <h1><b>♥</b>Adopta una mascota<b>♥</b></h1>
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">En Adopcion♥</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="principal">
+        <div class="titulo-y-subtitulo">
+            <h1>Adopta una Mascota</h1>
+            <p>Encuentra a tu nuevo mejor amigo</p>
+        </div>
+        <img src="Imagenes/cachorro saltando.jpg">
+    </section>
+    <section class="adopcion">
+        <h2>Amiguitos en busqueda de hogar</h2>
+        <p>Explora nuestra galería para conocerlos.</p>
+        <button onclick="window.location.href='#gallery'">Ver Galería</button>
+    </section>
+    <section id="testimonials">
+        <h2>Historias de Adopción y Amor</h2>
+
+        <div class="testimonial">
+            <img src="Imagenes/pexels-oleksandr-p-1174081.jpg"">
+            <p>" Adoptar a Milo fue la mejor decisión que he tomado. Ha llenado mi vida de amor y alegría."</p>
+            <cite>— Juliana</cite>
+        </div>
+
+        <div class="testimonial">
+            <img src="Imagenes/girls-5801275_1280.jpg">
+            <p>"Nuestra familia creció cuando Tommi llego. Nuestro peludo es un miembro más de nuestro hogar."</p>
+            <cite>— Micaela</cite>
+        </div>
+
+        <!-- Puedes agregar más testimonios según sea necesario -->
+
+    </section>
+
+    <section id="galeria">
+        <h2>Galería de Mascotas</h2>
+        <p>Aqui podrás conocer más de tu proximo compañero!</p>
+
+        <div class="pet-card">
+            <img src="/Mi-web-con-chat-GPT/Imagenes/pexels-dominika-roseclay-895259.jpg">
+            <h3>Pancho</h3>
+            <p>Raza:Salchicha</p>
+            <p>Edad:2 Años</p>
+            <button onclick="mostrarDetalle('detalle1')">Ver Detalles</button>
+        </div>
+
+        <div class="pet-card">
+            <img src="Imagenes/pexels-kat-smith-551628.jpg">
+            <h3>Tobby</h3>
+            <p>Raza: Mestizo</p>
+            <p>Edad: 4 Años</p>
+            <button onclick="mostrarDetalle('detalle2')">Ver Detalles</button>
+        </div>
+
+        <div class="pet-card">
+            <img src="Imagenes/pexels-nothing-ahead-16278340.jpg">
+            <h3>Luna y Félix</h3>
+            <p>Raza: Mestizos</p>
+            <p>Edad: 4 Meses</p>
+            <button onclick="mostrarDetalle('detalle2')">Ver Detalles</button>
+        </div>
+
+        <!-- Puedes agregar más tarjetas de mascotas según sea necesario -->
+
+        <div id="detalle1" class="detalle-mascota">
+            <img src="Imagenes/pexels-dominika-roseclay-895259.jpg" alt="perro_salchicha">
+            <h3>Pancho</h3>
+            <p>Raza: Salchicha</p>
+            <p>Edad: 2 Años</p>
+            <p>Descripción: Pancho tiene 2 años esta castrado en busqueda de una familia para darle amor.
+                Es muy jugueton y aprende rapido, esta castrado y vacunado.</p>
+            <button onclick="ocultarDetalle('detalle1')">Cerrar Detalles</button>
+        </div>
+
+        <div id="detalle2" class="detalle-mascota">
+            <img src="Imagenes/pexels-kat-smith-551628.jpg">
+            <h3>Tobby</h3>
+            <p>Raza: Mestizo</p>
+            <p>Edad: 4 Años</p>
+            <p>Descripción: Tobby es un perro obediente muy fiel le gusta pasear, le encanta los niños y es muy
+                protector.
+                Esta castrado y vacunado.</p>
+            <button onclick="ocultarDetalle('detalle2')">Cerrar Detalles</button>
+        </div>
+        <div id="detalle3" class="detalle-mascota">
+            <img src="Imagenes/pexels-nothing-ahead-16278340.jpg">
+            <h3>Luna y Félix</h3>
+            <p>Raza: Mestizo</p>
+            <p>Edad: 4 Meses</p>
+            <p>Descripción: 2 Hermosos hermanitos estan en busqueda de una familia que quiera recibir todo el amor que
+                tienen ambos para brindar. Se entregan desparacitados, con vacunas y compromiso de castración
+            </p>
+            <button onclick="ocultarDetalle('detalle2')">Cerrar Detalles</button>
+        </div>
+
+        <!-- Puedes agregar más detalles de mascotas según sea necesario -->
+
+    </section>
+
+
+    <section>
+        <div class="listo-para-adoptar">
+        <h2>¿Listo para Adoptar?</h2>
+        <p>Completa el siguiente formulario de adopción.
+           Nos pondremos en contacto contigo para comentarte
+           como sera el proceso y brindarte toda la información
+           necesaria para concretar el proceso.</p>
+           </div>
+    </section>
+
+    <section id="formulario">
+        <h2>Formulario de Adopción</h2>
+        <p>Rellena el formulario para iniciar el proceso de adopción.</p>
+        <section id="adoption-form">
+            <form id="adoption-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Teléfono de Contacto:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="direccion">Dirección:</label>
+                <textarea id="direccion" name="direccion" rows="4" required></textarea>
+
+                <label for="motivo">Motivo de Adopción:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="compania">Compañía</option>
+                    <option value="guardian">Guardián</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="mensaje">Mensaje Adicional:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </section>
+
+        <!-- Puedes agregar aquí el formulario de adopción -->
+    </section>
+
+    <footer class="footer">
+        <h4>© 2024 Adopta una Mascota</h4>
+        <p>Seguinos en nuestras <b>redes</b></p>
+        <div class="social-logos">
+            <img src="Imagenes/facebook.png">
+            <img src="Imagenes/gorjeo.png">
+            <img src="Imagenes/instagram.png">
+        </div>
+        <div class="redes-links">
+            <a href="Https://facebook.com">Facebook</a>
+            <a href="Https://twitter.com">Twitter</a>
+            <a href="https://instagram.com/">Instagram</a>
+        </div>
+    </footer>
+    <div id="boton">
+        <a href="https://instagram.com" target="_blank"><img src="Imagenes/casa-de-mascotas.png"></a>
+    </div>
+</body>
+
+</html>
