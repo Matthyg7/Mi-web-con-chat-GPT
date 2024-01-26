@@ -15,3 +15,36 @@ function changeSlide(direction) {
     const transformValue = -currentIndex * imageWidth;
     images.style.transform = `translateX(${transformValue}px)`;
 }*/
+
+function toggleDetalle(detalleId) {
+    let detalle = document.getElementById(detalleId);
+    if (detalle) {
+        if (detalle.style.display === 'none' || detalle.style.display === '') {
+            detalle.style.display = 'block';
+        } else {
+            detalle.style.display = 'none';
+        }
+    }
+}
+
+function scrollToElement(elementId) {
+    let element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+
+    document.getElementById('adoption-form').addEventListener('submit', function (event) {
+        let nombre = document.getElementById('nombre').value;
+        let correo = document.getElementById('correo').value;
+        let telefono = document.getElementById('telefono').value;
+        let direccion = document.getElementById('direccion').value;
+        let motivo = document.getElementById('motivo').value;
+
+        if (!nombre || !correo || !telefono || !direccion || !motivo) {
+            alert('Por favor, completa todos los campos del formulario.');
+            event.preventDefault();
+        }
+    });
+

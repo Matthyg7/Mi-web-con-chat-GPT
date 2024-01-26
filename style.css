@@ -29,7 +29,7 @@ header {
 }
 
 .encabezado {
-    background: rgb(129, 189, 164);
+    background: #81bda4;
     background: radial-gradient(circle, rgba(129, 189, 164, 0.9192051820728291) 0%, rgba(246, 170, 147, 1) 100%);
     display: flex;
     justify-content:space-between;
@@ -224,10 +224,14 @@ button:hover {
 .detalle-mascota {
     display: none;
     margin-top: 20px;
+    display: none;
+    transition:0.5s ease;
 }
 
 .detalle-mascota img {
-    width: 100%;
+    height: 280px;
+    width: 260px;
+    object-fit: contain;
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -528,7 +532,7 @@ button:hover {
         margin: 10px 0;
     }
     .testimonial img {
-        margin-left: 60px;
+        margin-left: 200px;
         border-radius: 50%;
         width: 205px; /* Ajusta el tamaño según sea necesario */
         height: 205px; /* Ajusta el tamaño según sea necesario */
@@ -536,6 +540,19 @@ button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    @media (max-width:500px) {
+        .testimonial img {
+            margin-left: 130px;
+            border-radius: 50%;
+            width: 205px; /* Ajusta el tamaño según sea necesario */
+            height: 205px; /* Ajusta el tamaño según sea necesario */
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
     }
     
     .testimonial cite {
@@ -624,10 +641,30 @@ button:hover {
     height: 40px;
     padding-right: 25px;
 }
+@media (max-width:500px){
+    .social-logos img{
+        height: 40px;
+        padding-right: 23px;
+        padding-left: 5px;
+
+    }
+}
 .redes-links a{
     padding-right: 14px;
     text-decoration: none;
     color: var(--soft-black);
+}
+#boton {
+    position: fixed;
+    bottom: 22px;
+    right: 20px;
+}
+
+#boton a img {
+    height: 30px;
+    width: 30px;
+    font-size: 1px;
+    color: #10a6eb;
 }
 
 /* Estilos para dispositivos con una anchura de pantalla de hasta 768px */
