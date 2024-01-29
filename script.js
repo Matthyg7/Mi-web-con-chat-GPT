@@ -15,6 +15,12 @@ function changeSlide(direction) {
     const transformValue = -currentIndex * imageWidth;
     images.style.transform = `translateX(${transformValue}px)`;
 }*/
+let menu_responsive = document.querySelector(".checkbtn");
+
+menu_responsive.onclick = function () {
+    navBar = document.querySelector(".navbar");
+    navBar.classList.toggle("active");
+}
 
 function toggleDetalle(detalleId) {
     let detalle = document.getElementById(detalleId);
