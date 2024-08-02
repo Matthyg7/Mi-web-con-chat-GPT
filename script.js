@@ -1,27 +1,12 @@
-/*let currentIndex = 0;
+// Controla la visibilidad del menú de navegación en dispositivos móviles
+let menuResponsive = document.querySelector(".checkbtn");
 
-function changeSlide(direction) {
-    const images = document.querySelector('.images');
-    const imageWidth = document.querySelector('.images img').clientWidth;
-    
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = images.childElementCount - 1;
-    } else if (currentIndex >= images.childElementCount) {
-        currentIndex = 0;
-    }
-
-    const transformValue = -currentIndex * imageWidth;
-    images.style.transform = `translateX(${transformValue}px)`;
-}*/
-let menu_responsive = document.querySelector(".checkbtn");
-
-menu_responsive.onclick = function () {
-    navBar = document.querySelector(".navbar");
+menuResponsive.onclick = function () {
+    let navBar = document.querySelector(".navbar");
     navBar.classList.toggle("active");
 }
 
+// Alterna la visibilidad de los detalles de una mascota
 function toggleDetalle(detalleId) {
     let detalle = document.getElementById(detalleId);
     if (detalle) {
@@ -33,6 +18,7 @@ function toggleDetalle(detalleId) {
     }
 }
 
+// Desplaza suavemente hacia un elemento específico en la página
 function scrollToElement(elementId) {
     let element = document.getElementById(elementId);
     if (element) {
@@ -40,17 +26,17 @@ function scrollToElement(elementId) {
     }
 }
 
+// Valida el formulario de adopción antes de enviarlo
+document.getElementById('formulario').addEventListener('submit', function (event) {
+    let nombre = document.getElementById('nombre').value;
+    let correo = document.getElementById('correo').value;
+    let telefono = document.getElementById('telefono').value;
+    let direccion = document.getElementById('direccion').value;
+    let motivo = document.getElementById('motivo').value;
 
-    document.getElementById('adoption-form').addEventListener('submit', function (event) {
-        let nombre = document.getElementById('nombre').value;
-        let correo = document.getElementById('correo').value;
-        let telefono = document.getElementById('telefono').value;
-        let direccion = document.getElementById('direccion').value;
-        let motivo = document.getElementById('motivo').value;
-
-        if (!nombre || !correo || !telefono || !direccion || !motivo) {
-            alert('Por favor, completa todos los campos del formulario.');
-            event.preventDefault();
-        }
-    });
-
+    // Verifica que todos los campos estén completos
+    if (!nombre || !correo || !telefono || !direccion || !motivo) {
+        alert('Por favor, completa todos los campos del formulario.');
+        event.preventDefault();
+    }
+})
