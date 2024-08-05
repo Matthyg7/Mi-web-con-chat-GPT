@@ -6,16 +6,10 @@ menuResponsive.onclick = function () {
     navBar.classList.toggle("active");
 }
 
-// Alterna la visibilidad de los detalles de una mascota
-function toggleDetalle(detalleId) {
-    let detalle = document.getElementById(detalleId);
-    if (detalle) {
-        if (detalle.style.display === 'none' || detalle.style.display === '') {
-            detalle.style.display = 'block';
-        } else {
-            detalle.style.display = 'none';
-        }
-    }
+// Alterna la visibilidad de los detalles de una mascota usando una clase
+function toggleDetalle(id) {
+    const detalle = document.getElementById(id);
+    detalle.classList.toggle("mostrar");
 }
 
 // Desplaza suavemente hacia un elemento específico en la página
@@ -39,4 +33,4 @@ document.getElementById('formulario').addEventListener('submit', function (event
         alert('Por favor, completa todos los campos del formulario.');
         event.preventDefault();
     }
-})
+});

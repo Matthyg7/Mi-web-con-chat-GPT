@@ -1,261 +1,350 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <!-- Metadatos y enlaces a archivos CSS -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adopta una Mascota</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="Imagenes/2-removebg-preview-copia.ico" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
-    integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-</head>
-
-<body>
-  <!-- Cabecera principal del sitio -->
-  <header class="encabezado">
-    <img
-      class="logo"
-      src="Imagenes/1-removebg-preview.png"
-      alt="Logo de Adopta una Mascota"
-      loading="lazy" <!-- Optimización de carga -->
+  <head>
+    <!-- Metadatos y enlaces a archivos CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopta una Mascota</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Imagenes/2-removebg-preview-copia.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <h1><b>♥</b>Adopta una mascota<b>♥</b></h1>
-    <input type="checkbox" id="check" />
-    <label for="check" class="checkbtn">
-      <i class="fa-solid fa-bars" aria-hidden="true"></i>
-      <span class="sr-only">Abrir menú</span>
-    </label>
-    <nav class="navbar" aria-label="Main navigation">
-      <!-- Menú de navegación principal -->
-      <ul class="menu">
-        <li class="navli"></li>
-        <li class="navli">
-          <a href="#principal" aria-current="page">Inicio</a>
-        </li>
-        <li class="navli"><a href="#adopcion">En Adopción♥</a></li>
-        <li class="navli"><a href="#nosotros">Sobre Nosotros</a></li>
-        <li class="navli"><a href="#ayuda">Ayuda</a></li>
-        <li class="navli"><a href="#formulario">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-  <!-- Sección principal de contenido -->
-  <section class="principal">
-    <div class="titulo-y-subtitulo">
-      <h2>Adopta una Mascota</h2>
-      <p>Encuentra a tu nuevo mejor amigo</p>
-    </div>
-    <img
-      src="Imagenes/cachorro-saltando.jpg"
-      srcset="
-        Imagenes/cachorro-saltando-480w.jpg 480w,
-        Imagenes/cachorro-saltando-800w.jpg 800w,
-        Imagenes/cachorro-saltando-1200w.jpg 1200w
-      "
-      sizes="
+  <body>
+    <!-- Cabecera principal del sitio -->
+    <header class="encabezado">
+      <img
+        class="logo"
+        src="Imagenes/1-removebg-preview.png"
+        alt="Logo de Adopta una Mascota"
+        loading="lazy"
+      />
+      <h1><b>♥</b>Adopta una mascota<b>♥</b></h1>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <span class="sr-only">Abrir menú</span>
+      </label>
+      <nav class="navbar" aria-label="Main navigation">
+        <!-- Menú de navegación principal -->
+        <ul class="menu">
+          <li class="navli"></li>
+          <li class="navli">
+            <a href="#principal" aria-current="page">Inicio</a>
+          </li>
+          <li class="navli"><a href="#adopcion">En Adopción♥</a></li>
+          <li class="navli"><a href="#nosotros">Sobre Nosotros</a></li>
+          <li class="navli"><a href="#ayuda">Ayuda</a></li>
+          <li class="navli"><a href="#formulario">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección principal de contenido -->
+    <section class="principal">
+      <div class="titulo-y-subtitulo">
+        <h2>Adopta una Mascota</h2>
+        <p>Encuentra a tu nuevo mejor amigo</p>
+      </div>
+      <img
+        src="Imagenes/cachorro-saltando.jpg"
+        srcset="
+          Imagenes/cachorro-saltando-480w.jpg 480w,
+          Imagenes/cachorro-saltando-800w.jpg 800w,
+          Imagenes/cachorro-saltando-1200w.jpg 1200w
+        "
+        sizes="
         (max-width: 600px) 480px,
         (max-width: 1200px) 800px,
         1200px
       "
-      alt="Cachorro saltando"
-      loading="lazy" <!-- Optimización de carga -->
-    />
-  </section>
+        alt="Cachorro saltando"
+        loading="lazy"
+      />
+    </section>
 
-  <!-- Sección sobre adopción -->
-  <section class="adopcion">
-    <h2>Amiguitos en búsqueda de hogar</h2>
-    <p>Explora nuestra galería para conocerlos.</p>
-    <button onclick="window.location.href='#galeria'">Ver Galería</button>
-  </section>
+    <!-- Sección sobre adopción -->
+    <section class="adopcion">
+      <h2>Amiguitos en búsqueda de hogar</h2>
+      <p>Explora nuestra galería para conocerlos.</p>
+      <button class="btn-galeria" onclick="window.location.href='#galeria'">
+        Ver Galería
+      </button>
+    </section>
 
-  <!-- Sección de testimonios -->
-  <section id="testimonials">
-    <h2>Historias de Adopción y Amor</h2>
-    <div class="testimonial">
-      <img
-        src="Imagenes/pexels-oleksandr-p-1174081.jpg"
-        srcset="
-          Imagenes/pexels-oleksandr-p-1174081-480w.jpg 480w,
-          Imagenes/pexels-oleksandr-p-1174081-800w.jpg 800w,
-          Imagenes/pexels-oleksandr-p-1174081-1200w.jpg 1200w
-        "
-        sizes="
+    <!-- Sección de testimonios -->
+    <section id="testimonials">
+      <h2>Historias de Adopción y Amor</h2>
+      <div class="testimonial">
+        <img
+          src="Imagenes/pexels-oleksandr-p-1174081.jpg"
+          srcset="
+            Imagenes/pexels-oleksandr-p-1174081-480w.jpg 480w,
+            Imagenes/pexels-oleksandr-p-1174081-800w.jpg 800w,
+            Imagenes/pexels-oleksandr-p-1174081-1200w.jpg 1200w
+          "
+          sizes="
           (max-width: 600px) 480px,
           (max-width: 1200px) 800px,
           1200px
         "
-        alt="Juliana con Milo"
-        loading="lazy" <!-- Optimización de carga -->
-      />
-      <p>
-        "Adoptar a Milo fue la mejor decisión que he tomado. Ha llenado mi
-        vida de amor y alegría."
-      </p>
-      <cite>— Juliana</cite>
-    </div>
-    <div class="testimonial">
-      <img
-        src="Imagenes/girls-5801275_1280.jpg"
-        srcset="
-          Imagenes/girls-5801275_480w.jpg 480w,
-          Imagenes/girls-5801275_800w.jpg 800w,
-          Imagenes/girls-5801275_1200w.jpg 1200w
-        "
-        sizes="
+          alt="Juliana con Milo"
+          loading="lazy"
+        />
+        <p>
+          "Adoptar a Milo fue la mejor decisión que he tomado. Ha llenado mi
+          vida de amor y alegría."
+        </p>
+        <cite>— Juliana</cite>
+      </div>
+      <div class="testimonial">
+        <img
+          src="Imagenes/girls-5801275_1280.jpg"
+          srcset="
+            Imagenes/girls-5801275_1280-480w.jpg 480w,
+            Imagenes/girls-5801275_1280-800w.jpg 800w,
+            Imagenes/girls-5801275_1280-1200w.jpg 1200w
+          "
+          sizes="
           (max-width: 600px) 480px,
           (max-width: 1200px) 800px,
           1200px
         "
-        alt="Micaela con Tommi"
-        loading="lazy" <!-- Optimización de carga -->
-      />
-      <p>
-        "Nuestra familia creció cuando Tommi llegó. Nuestro peludo es un
-        miembro más de nuestro hogar."
-      </p>
-      <cite>— Micaela</cite>
-    </div>
-  </section>
+          alt="Micaela con Tommi"
+          loading="lazy"
+        />
+        <p>
+          "Nuestra familia creció cuando Tommi llegó. Nuestro peludo es un
+          miembro más de nuestro hogar."
+        </p>
+        <cite>— Micaela</cite>
+      </div>
+    </section>
 
-  <!-- Sección de galería de mascotas -->
-  <section id="galeria">
-    <h2>Galería de Mascotas</h2>
-    <p>Aquí podrás conocer más de tu próximo compañero!</p>
-    <div class="pet-card">
-      <img
-        src="Imagenes/pexels-dominika-roseclay-895259.jpg"
-        srcset="
-          Imagenes/pexels-dominika-roseclay-480w.jpg 480w,
-          Imagenes/pexels-dominika-roseclay-800w.jpg 800w,
-          Imagenes/pexels-dominika-roseclay-1200w.jpg 1200w
-        "
-        sizes="
-          (max-width: 600px) 480px,
-          (max-width: 1200px) 800px,
-          1200px
-        "
-        alt="Pancho, perro salchicha"
-        loading="lazy" <!-- Optimización de carga -->
-      />
-      <h3>Pancho</h3>
-      <p>Raza: Salchicha</p>
-      <p>Edad: 2 Años</p>
-      <button onclick="toggleDetalle('detalle1')" aria-label="Ver detalles de Pancho">Ver Detalles</button>
-    </div>
-    <div id="detalle1" class="detalle-mascota" aria-hidden="true">
-      <img
-        src="Imagenes/pexels-dominika-roseclay-895259.jpg"
-        srcset="
-          Imagenes/pexels-dominika-roseclay-480w.jpg 480w,
-          Imagenes/pexels-dominika-roseclay-800w.jpg 800w,
-          Imagenes/pexels-dominika-roseclay-1200w.jpg 1200w
-        "
-        sizes="
-          (max-width: 600px) 480px,
-          (max-width: 1200px) 800px,
-          1200px
-        "
-        alt="Pancho, perro salchicha"
-        loading="lazy" <!-- Optimización de carga -->
-      />
-      <h3>Pancho</h3>
-      <p>Raza: Salchicha</p>
-      <p>Edad: 2 Años</p>
-      <p>
-        Descripción: Pancho tiene 2 años, está castrado y en búsqueda de una
-        familia para darle amor. Es muy juguetón y aprende rápido, está
-        castrado y vacunado.
-      </p>
-      <button onclick="toggleDetalle('detalle1')" aria-label="Cerrar detalles de Pancho">Cerrar Detalles</button>
-    </div>
-    <div class="pet-card">
-      <img
-        src="Imagenes/pexels-kat-smith-551628.jpg"
-        srcset="
-          Imagenes/pexels-kat-smith-480w.jpg 480w,
-          Imagenes/pexels-kat-smith-800w.jpg 800w,
-          Imagenes/pexels-kat-smith-1200w.jpg 1200w
-        "
-        sizes="
-          (max-width: 600px) 480px,
-          (max-width: 1200px) 800px,
-          1200px
-        "
-        alt="Rosa, gata persa"
-        loading="lazy" <!-- Optimización de carga -->
-      />
-      <h3>Rosa</h3>
-      <p>Raza: Persa</p>
-      <p>Edad: 4 Años</p>
-      <button onclick="toggleDetalle('detalle2')" aria-label="Ver detalles de Rosa">Ver Detalles</button>
-    </div>
-    <div id="detalle2" class="detalle-mascota" aria-hidden="true">
-      <img
-        src="Imagenes/pexels-kat-smith-551628.jpg"
-        srcset="
-          Imagenes/pexels-kat-smith-480w.jpg 480w,
-          Imagenes/pexels-kat-smith-800w.jpg 800w,
-          Imagenes/pexels-kat-smith-1200w.jpg 1200w
-        "
-        sizes="
-          (max-width: 600px) 480px,
-          (max-width: 1200px) 800px,
-          1200px
-        "
-        alt="Rosa, gata persa"
-        loading="lazy" <!-- Optimización de carga -->
-      />
-      <h3>Rosa</h3>
-      <p>Raza: Persa</p>
-      <p>Edad: 4 Años</p>
-      <p>
-        Descripción: Rosa es una gata persa de 4 años, cariñosa y tranquila.
-        Está vacunada y en busca de una familia que le brinde un hogar cálido.
-      </p>
-      <button onclick="toggleDetalle('detalle2')" aria-label="Cerrar detalles de Rosa">Cerrar Detalles</button>
-    </div>
-  </section>
+    <!-- Sección de galería de mascotas -->
+    <section id="galeria">
+      <h2>Galería de Mascotas</h2>
+      <p>Aquí podrás conocer más de tu próximo compañero!</p>
 
-  <!-- Sección de contacto -->
-  <section id="formulario">
-    <h2>Contacto</h2>
-    <p>Déjanos tus comentarios o consulta aquí.</p>
-    <form action="#" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required />
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required />
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+      <!-- Tarjeta de Pancho -->
+      <div class="pet-card">
+        <img
+          src="Imagenes/pexels-dominika-roseclay-895259.jpg"
+          srcset="
+            Imagenes/pexels-dominika-roseclay-895259-480w.jpg 480w,
+            Imagenes/pexels-dominika-roseclay-895259-800w.jpg 800w,
+            Imagenes/pexels-dominika-roseclay-895259-1200w.jpg 1200w
+          "
+          sizes="
+            (max-width: 600px) 480px,
+            (max-width: 1200px) 800px,
+            1200px
+          "
+          alt="Pancho, perro salchicha"
+          loading="lazy"
+        />
+        <h3>Pancho</h3>
+        <p>Raza: Salchicha</p>
+        <p>Edad: 2 Años</p>
+        <button
+          class="btn-galeria"
+          onclick="toggleDetalle('detalle1')"
+          aria-label="Ver detalles de Pancho"
+        >
+          Ver Detalles
+        </button>
+      </div>
 
-  <!-- Pie de página -->
-  <footer>
-    <p>&copy; 2024 Adopta una Mascota. Todos los derechos reservados.</p>
-  </footer>
+      <div id="detalle1" class="detalle-mascota" aria-hidden="true">
+        <img
+          src="Imagenes/pexels-dominika-roseclay-895259.jpg"
+          srcset="
+            Imagenes/pexels-dominika-roseclay-895259-480w.jpg 480w,
+            Imagenes/pexels-dominika-roseclay-895259-800w.jpg 800w,
+            Imagenes/pexels-dominika-roseclay-895259-1200w.jpg 1200w
+          "
+          sizes="
+            (max-width: 600px) 480px,
+            (max-width: 1200px) 800px,
+            1200px
+          "
+          alt="Pancho, perro salchicha"
+          loading="lazy"
+        />
+        <h3>Pancho</h3>
+        <p>Raza: Salchicha</p>
+        <p>Edad: 2 Años</p>
+        <p>
+          Descripción: Pancho tiene 2 años, está castrado y en búsqueda de una
+          familia para darle amor. Es muy juguetón y aprende rápido, está
+          castrado y vacunado.
+        </p>
+        <button
+          class="btn-galeria"
+          onclick="toggleDetalle('detalle1')"
+          aria-label="Cerrar detalles de Pancho"
+        >
+          Cerrar Detalles
+        </button>
+      </div>
 
-  <!-- Scripts adicionales -->
-  <script>
-    function toggleDetalle(id) {
-      const detalle = document.getElementById(id);
-      detalle.classList.toggle('mostrar');
-    }
-  </script>
-</body>
+      <!-- Tarjeta de Tobby -->
+      <div class="pet-card">
+        <img
+          src="Imagenes/pexels-kat-smith-551628.jpg"
+          srcset="
+            Imagenes/pexels-kat-smith-551628-480w.jpg 480w,
+            Imagenes/pexels-kat-smith-551628-800w.jpg 800w,
+            Imagenes/pexels-kat-smith-551628-1200w.jpg 1200w
+          "
+          sizes="
+            (max-width: 600px) 480px,
+            (max-width: 1200px) 800px,
+            1200px
+          "
+          alt="Tobby, perra mestiza"
+          loading="lazy"
+        />
+        <h3>Tobby</h3>
+        <p>Raza: Mestiza</p>
+        <p>Edad: 4 Años</p>
+        <button
+          class="btn-galeria"
+          onclick="toggleDetalle('detalle2')"
+          aria-label="Ver detalles de Tobby"
+        >
+          Ver Detalles
+        </button>
+      </div>
+
+      <div id="detalle2" class="detalle-mascota" aria-hidden="true">
+        <img
+          src="Imagenes/pexels-kat-smith-551628.jpg"
+          srcset="
+            Imagenes/pexels-kat-smith-551628-480w.jpg 480w,
+            Imagenes/pexels-kat-smith-551628-800w.jpg 800w,
+            Imagenes/pexels-kat-smith-551628-1200w.jpg 1200w
+          "
+          sizes="
+            (max-width: 600px) 480px,
+            (max-width: 1200px) 800px,
+            1200px
+          "
+          alt="Tobby, perra mestiza"
+          loading="lazy"
+        />
+        <h3>Tobby</h3>
+        <p>Raza: Mestiza</p>
+        <p>Edad: 4 Años</p>
+        <p>
+          Descripción: Tobby es una perra obediente muy fiel. Le gusta pasear,
+          le encantan los niños y es muy protectora. Está castrada y vacunada.
+        </p>
+        <button
+          class="btn-galeria"
+          onclick="toggleDetalle('detalle2')"
+          aria-label="Cerrar detalles de Tobby"
+        >
+          Cerrar Detalles
+        </button>
+      </div>
+
+      <!-- Tarjeta de Lilo y Felix -->
+      <div class="pet-card">
+        <img
+          src="Imagenes/pexels-nothing-ahead-16278340.jpg"
+          srcset="
+            Imagenes/pexels-nothing-ahead-16278340-480w.jpg 480w,
+            Imagenes/pexels-nothing-ahead-16278340-800w.jpg 800w,
+            Imagenes/pexels-nothing-ahead-16278340-1200w.jpg 1200w
+          "
+          sizes="
+            (max-width: 600px) 480px,
+            (max-width: 1200px) 800px,
+            1200px
+          "
+          alt="Lilo y Felix, gatitos mestizos"
+          loading="lazy"
+        />
+        <h3>Lilo y Felix</h3>
+        <p>Raza: Mestizos</p>
+        <p>Edad: 2 meses</p>
+        <button
+          class="btn-galeria"
+          onclick="toggleDetalle('detalle3')"
+          aria-label="Ver detalles de Lilo y Felix"
+        >
+          Ver Detalles
+        </button>
+      </div>
+
+      <div id="detalle3" class="detalle-mascota" aria-hidden="true">
+        <img
+          src="Imagenes/pexels-nothing-ahead-16278340.jpg"
+          srcset="
+            Imagenes/pexels-nothing-ahead-16278340-480w.jpg 480w,
+            Imagenes/pexels-nothing-ahead-16278340-800w.jpg 800w,
+            Imagenes/pexels-nothing-ahead-16278340-1200w.jpg 1200w
+          "
+          sizes="
+            (max-width: 600px) 480px,
+            (max-width: 1200px) 800px,
+            1200px
+          "
+          alt="Lilo y Felix, gatitos mestizos"
+          loading="lazy"
+        />
+        <h3>Lilo y Felix</h3>
+        <p>Raza: Mestizos</p>
+        <p>Edad: 2 meses</p>
+        <p>
+          Descripción: 2 hermosos hermanitos están en búsqueda de una familia
+          que quiera recibir todo el amor que tienen ambos para brindar. Se
+          entregan desparasitados, con vacunas y compromiso de castración.
+        </p>
+        <button
+          class="btn-galeria"
+          onclick="toggleDetalle('detalle3')"
+          aria-label="Cerrar detalles de Lilo y Felix"
+        >
+          Cerrar Detalles
+        </button>
+      </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="formulario">
+      <h2>Contacto</h2>
+      <p>Déjanos tus comentarios o consulta aquí.</p>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2024 Adopta una Mascota. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts adicionales -->
+    <script src="scripts.js"></script>
+  </body>
 </html>
